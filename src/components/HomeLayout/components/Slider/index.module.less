@@ -1,0 +1,55 @@
+@import '~antd/es/style/themes/default.less';
+
+.slider {
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: @body-background;
+  // color: rgba(229, 224, 216, 0.85);
+
+  :global {
+    .btn-box {
+      .btn {
+        padding: 16px;
+        border-bottom: .5px solid rgba(229, 224, 216, 0.65);
+        justify-content: center;
+      }
+
+      .btn-icon {
+        font-size: 30px;
+      }
+
+      .start {
+        color: @success-color;
+        // background-color: @success-color;
+
+        &:hover {
+          background-color: @success-color-hover;
+        }
+      }
+
+      .end {
+        color: @error-color;
+        // background-color: @info-color;
+
+        &:hover {
+          background-color: @error-color-hover;
+        }
+      }
+    }
+
+    .info-box {
+      flex: 1;
+      border-bottom: 1px solid @border-color-base;
+      padding: 16px;
+    }
+
+    .message-box {
+      flex: 1;
+      padding: 16px;
+    }
+  }
+}

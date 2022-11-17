@@ -1,0 +1,124 @@
+@import '~antd/es/style/themes/default.less';
+
+.control {
+  flex-direction: column;
+  user-select: none;
+
+  :global {
+    .title {
+      width: 100%;
+    }
+
+    .control-body {
+      width: 100%;
+      flex: 1;
+      margin-top: -24px;
+      padding-top: 12px;
+      overflow-y: auto;
+
+      .control-item {
+        width: calc(100% - 48px);
+        margin: 0 24px 24px;
+        padding: 0 24px;
+        background-color: @background-color-light;
+        box-shadow: @box-shadow-base;
+
+        .item-title {
+          font-size: 26px;
+          font-weight: 700;
+          cursor: pointer;
+          padding: 12px 0 18px 0;
+          gap: 8px;
+        }
+
+        .param-item {
+          flex: 1;
+          padding-bottom: 16px;
+          margin-left: 24px;
+
+          &-underline {
+            text-decoration: underline;
+          }
+
+          .icon-box {
+            height: 35px;
+            width: 35px;
+            min-width: 35px;
+            border-radius: 50%;
+            justify-content: center;
+            background-color: @border-color-base;
+            margin-right: 12px;
+
+            .item-icon {
+              font-size: 20px;
+            }
+          }
+
+          .title-box {
+            width: 200px;
+
+            div {
+              font-size: 20px;
+              margin-bottom: -12px;
+            }
+
+            span {
+              font-size: 18px;
+              color: @text-color-secondary;
+            }
+          }
+
+          .value-box {
+            flex: 1;
+            width: calc(100% - 259px);
+            font-weight: 250;
+            word-break: break-all;
+            margin-left: 16px;
+
+            p {
+              margin-bottom: 0;
+              color: @text-color;
+              font-weight: 700;
+            }
+
+            .ant-form-item {
+              margin-bottom: 0;
+
+              .ant-form-item-control {
+                height: 40px;
+                line-height: 40px;
+
+                .ant-btn {
+                  height: 38px;
+                }
+              }
+
+              .dir {
+                gap: 12px;
+              }
+            }
+          }
+
+        }
+
+        .img-box {
+          width: 100%;
+          height: 500px;
+          background-color: @border-color-base;
+        }
+      }
+    }
+
+    .control-footer {
+      width: 100%;
+      justify-content: center;
+      padding-top: 24px;
+
+      .ant-btn {
+        width: 200px;
+        height: 40px;
+        // line-height: 30px;
+      }
+    }
+  }
+}
